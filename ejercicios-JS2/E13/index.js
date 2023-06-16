@@ -6,7 +6,6 @@ Cantidad de triángulos de cada tipo.
 Tipo de triángulo del que hay menor cantidad.
 */
 
-const aux = Math.round(Math.random() * 10);
 let triangles = [];
 let equilateral = [];
 let isosceles = [];
@@ -15,9 +14,9 @@ let result = "";
 
 const getTriangles = () => {
   for (let i = 1; i <= 4; i++) {
-    const side1 = aux;
-    const side2 = aux;
-    const side3 = aux;
+    const side1 = Math.round(Math.random() * 10);
+    const side2 = Math.round(Math.random() * 10);
+    const side3 = Math.round(Math.random() * 10);
     triangles.push([side1, side2, side3]);
   }
   return triangles;
@@ -38,10 +37,6 @@ const getTriangleType = triangles.map((triangle) => {
     console.log("Escaleno");
     scalene.push(triangle);
   }
-  console.log("Cantidad de triangulos equilateros", equilateral.length);
-  console.log("Cantidad de triangulos isosceles", isosceles.length);
-  console.log("Cantidad de triángulos escalesnos", scalene.length);
-  return equilateral, isosceles, scalene;
 });
 
 const countTriangles = () => {
@@ -59,3 +54,6 @@ const countTriangles = () => {
 getTriangles();
 getTriangleType();
 countTriangles();
+console.log("Cantidad de triangulos equilateros", equilateral.length);
+console.log("Cantidad de triangulos isosceles", isosceles.length);
+console.log("Cantidad de triángulos escalesnos", scalene.length);
