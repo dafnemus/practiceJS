@@ -6,24 +6,23 @@ Tener en cuenta que puede haber dos o más estructuras repetitivas en un algorit
 */
 
 const sumList = (lista) => {
-    let suma = 0;
-    lista.map((item) => {
-      suma += item;
-    });
-    return suma;
-  };
-  
-  const list1 = [23, 59, 1];
-  const list2 = [70, 12, 7];
-  
-  const totalList1 = sumList(list1);
-  const totalList2 = sumList(list2);
-  
-  if (totalList1 > totalList2) {
-    console.log("Lista 1 mayor");
-  } else if (totalList2 > totalList1) {
-    console.log("Lista 2 mayor");
-  } else {
-    console.log("Listas iguales");
-  }
-  
+  let suma = 0;
+  lista.map((item) => {
+    suma += item;
+  });
+  return suma;
+};
+
+const list1 = [23, 59, 1];
+const list2 = [70, 12, 7];
+
+const totalList1 = sumList(list1);
+const totalList2 = sumList(list2);
+
+if (totalList1 > totalList2) {
+  console.log("Lista 1 mayor");
+} else if (totalList2 > totalList1) {
+  console.log("Lista 2 mayor");
+} else {
+  console.log("Listas iguales");
+}

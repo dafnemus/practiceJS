@@ -5,24 +5,23 @@ Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde
 */
 
 const triangles = [
-    {
-      base: 15,
-      height: 8,
-    },
-    {
-      base: 9,
-      height: 14,
-    },
-    {
-      base: 10,
-      height: 5,
-    },
-  ];
-  
-  triangles.map(({ base, height }) => {
-    let superficie = (base * height) / 2;
-    console.log(
-      `Triángulo con base: ${base}cm y altura: ${height}cm posee una superficie de ${superficie}cm`
-    );
-  });
-  
+  {
+    base: 15,
+    height: 8,
+  },
+  {
+    base: 9,
+    height: 14,
+  },
+  {
+    base: 10,
+    height: 5,
+  },
+];
+
+triangles.map(({ base, height }) => {
+  let superficie = (base * height) / 2;
+  console.log(
+    `Triángulo con base: ${base}cm y altura: ${height}cm posee una superficie de ${superficie}cm`
+  );
+});
