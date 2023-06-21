@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Agregar un botón al HTML que cuando sea "clickeado" cambie el color y
+agregue un texto al ID contenedor -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + JS</title>
+    <style>
+      #container {
+        align-items: center;
+        background-color: red;
+        display: flex;
+        font-size: 2rem;
+        height: 200px;
+        justify-content: center;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <button onclick="changeContainer()">Click me</button>
+    <script src="index.js"></script>
+  </body>
+</html>
