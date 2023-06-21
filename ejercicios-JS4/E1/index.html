@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML + JS</title>
+    <style>
+      #container {
+        background-color: red;
+        color: black;
+        display: block;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">4444</div>
+    <script>
+      const container = document.getElementById("container");
+      const computedStyle = window.getComputedStyle(container);
+      const bgColor = computedStyle.getPropertyValue("background-color");
+      console.log(container)
+      console.log('fondo:', bgColor);
+    </script>
+  </body>
+</html>
