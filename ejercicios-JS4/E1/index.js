@@ -1,3 +1,5 @@
 const container = document.getElementById("container");
-const color = container.style.color
-console.log(color);
+const computedStyle = window.getComputedStyle(container);
+const bgColor = computedStyle.getPropertyValue("background-color");
+console.log(container);
+console.log("fondo:", bgColor);
