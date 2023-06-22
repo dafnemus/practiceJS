@@ -26,6 +26,17 @@ const stock = [
 ];
 
 // 1. Filtrar los productos que tienen una cantidad menor o igual a 5.
-const amountLess5 = stock.filter((item) => item.amount <= 5);
+// 2. Duplicar la cantidad de los productos restantes.
+const amountLess5 = [];
+const amountMore5 = [];
+const filtered = stock.filter((item) => {
+  if (item.amount <= 5) {
+    amountLess5.push(item);
+  } else {
+    item.amount *= 2;
+    amountMore5.push(item);
+  }
+});
 
 console.log(amountLess5);
+console.log(amountMore5);
