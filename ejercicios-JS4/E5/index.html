@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una
+      ventana de alerta si en la clave se ingresan menos de 7 caracteres o más
+      de 20 (capturar el evento onBlur)
+    </p>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password" onblur="onBlur()" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
