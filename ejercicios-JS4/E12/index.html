@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #title {
+        color: black;
+        background-color: transparent;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Mostrar un elemento de tipo H1, luego cuando se ingrese con el mouse
+      dentro del mismo cambiar el color a letra roja y color de fondo amarillo,
+      luego cuando se mueva la ﬂecha del mouse fuera del elemento volver al
+      color original.
+    </h2>
+    <h1
+      id="title"
+      onmouseenter="changeColor(event)"
+      onmouseleave="changeColor(event)"
+    >
+      TíTulo
+    </h1>
+  </body>
+  <script src="index.js"></script>
+</html>
