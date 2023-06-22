@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myDiv {
+        background-color: red;
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Elaborar un programa que muestre un div de color rojo. Cuando se presione
+      cambiar el color a amarillo y luego de soltar el botón del mouse volver a
+      pintar de rojo.
+    </h2>
+    <div
+      id="myDiv"
+      onmousedown="changeColor(event)"
+      onmouseup="changeColor(event)"
+    ></div>
+  </body>
+  <script src="index.js"></script>
+</html>
