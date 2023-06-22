@@ -40,3 +40,8 @@ const filtered = stock.filter((item) => {
 
 console.log(amountLess5);
 console.log(amountMore5);
+
+// 3. Calcular el valor total de *todo* el inventario original.
+const getTotal = stock.reduce((total, item) => {
+  return total + item.amount * item.price;
+}, 0);
