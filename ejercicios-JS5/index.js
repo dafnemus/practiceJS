@@ -50,3 +50,8 @@ const getTotal = stock.reduce((total, item) => {
 const more100 = stock.filter((item) => item.amount * item.price >= 100);
 
 console.log(more100);
+
+// Investigar sobre las funciones de arrays "find, some, every" para:
+// 6. Encontrar un producto que contenga la "ca" en su nombre
+const findName = stock.filter((item) => item.name.toLowerCase().includes("ca"));
+console.log(findName);
