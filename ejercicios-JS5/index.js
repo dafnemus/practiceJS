@@ -45,3 +45,8 @@ console.log(amountMore5);
 const getTotal = stock.reduce((total, item) => {
   return total + item.amount * item.price;
 }, 0);
+
+// 4. Filtrar los productos cuyo valor total sea mayor o igual a 100.
+const more100 = stock.filter((item) => item.amount * item.price >= 100);
+
+console.log(more100);
